@@ -1,0 +1,261 @@
+body {
+  background-color: black;
+}
+.container {
+  inline-size: 100%;
+  display: flex;
+
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container1 {
+  border: inset 3px red;
+  display: flex;
+
+  justify-content: start;
+  /* background: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(0, 255, 149),
+    rgb(8, 0, 255)
+  ); */
+  inline-size: 400px;
+  block-size: 400px;
+  margin-block-start: 20px;
+  box-shadow: 0px 0px 30px red;
+
+  transition-duration: 0.5s;
+}
+.krug {
+  background-color: rgb(0, 0, 0);
+  block-size: 50px;
+  inline-size: 50px;
+  border: solid 3px red;
+  box-shadow: 0px 0px 15px red;
+
+  position: relative;
+  animation-name: alpha;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transition-duration: 0.5s;
+}
+@keyframes alpha {
+  0% {
+    transform: translate(-3px, -3px);
+  }
+  25% {
+    transform: translate(347px, -3px);
+  }
+  50% {
+    transform: translate(347px, 347px);
+  }
+  75% {
+    transform: translate(-3px, 347px);
+  }
+  100% {
+    transform: translate(-3px, -1px);
+  }
+}
+.krugi {
+  background-color: rgb(0, 0, 0);
+  block-size: 50px;
+  inline-size: 50px;
+  border: solid 3px red;
+  box-shadow: 0px 0px 15px red;
+
+  position: absolute;
+  animation-name: beta;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transition-duration: 0.5s;
+}
+@keyframes beta {
+  0% {
+    transform: translate(347px, 347px);
+  }
+  25% {
+    transform: translate(-3px, 347px);
+  }
+  50% {
+    transform: translate(-3px, -3px);
+  }
+  75% {
+    transform: translate(347px, -3px);
+  }
+  100% {
+    transform: translate(347px, 347px);
+  }
+}
+.krugis {
+  background-color: rgb(0, 0, 0);
+  block-size: 50px;
+  inline-size: 50px;
+  border: solid 3px red;
+  box-shadow: 0px 0px 15px red;
+
+  position: absolute;
+  animation-name: gamma;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transition-duration: 0.5s;
+}
+@keyframes gamma {
+  0% {
+    transform: translate(347px, -3px);
+  }
+  25% {
+    transform: translate(347px, 347px);
+  }
+  50% {
+    transform: translate(-3px, 347px);
+  }
+  75% {
+    transform: translate(-3px, -3px);
+  }
+  100% {
+    transform: translate(347px, -3px);
+  }
+}
+.krugig {
+  background-color: rgb(0, 0, 0);
+  block-size: 50px;
+  inline-size: 50px;
+  border: solid 3px red;
+  box-shadow: 0px 0px 15px red;
+
+  position: absolute;
+  animation-name: omega;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transition-duration: 0.5s;
+}
+@keyframes omega {
+  0% {
+    transform: translate(-3px, 347px);
+  }
+  25% {
+    transform: translate(-3px, -3px);
+  }
+  50% {
+    transform: translate(347px, -3px);
+  }
+  75% {
+    transform: translate(347px, 347px);
+  }
+  100% {
+    transform: translate(-3px, 347px);
+  }
+}
+
+.container1:hover {
+  box-shadow: 0px 0px 30px yellow;
+  border: solid 3px yellow;
+}
+.container1:hover .krug {
+  box-shadow: 0px 0px 30px yellow;
+  border: solid 3px yellow;
+}
+.container1:hover .krugi {
+  box-shadow: 0px 0px 30px yellow;
+  border: solid 3px yellow;
+}
+.container1:hover .krugig {
+  box-shadow: 0px 0px 30px yellow;
+  border: solid 3px yellow;
+}
+.container1:hover .krugis {
+  box-shadow: 0px 0px 30px yellow;
+  border: solid 3px yellow;
+}
+.container1:hover .da {
+  box-shadow: 0px 0px 30px yellow;
+  border: solid 3px yellow;
+}
+
+.container1:active {
+  box-shadow: 0px 0px 30px aqua;
+  border: solid 3px aqua;
+}
+.container1:active .krug {
+  box-shadow: 0px 0px 30px aqua;
+  border: solid 3px aqua;
+}
+.container1:active .krugi {
+  box-shadow: 0px 0px 30px aqua;
+  border: solid 3px aqua;
+}
+.container1:active .krugig {
+  box-shadow: 0px 0px 30px aqua;
+  border: solid 3px aqua;
+}
+.container1:active .krugis {
+  box-shadow: 0px 0px 30px aqua;
+  border: solid 3px aqua;
+}
+.container1:active .da {
+  box-shadow: 0px 0px 30px aqua;
+  border: solid 3px aqua;
+}
+
+/* .container1:focus {
+  box-shadow: 0px 0px 30px lime;
+  border: solid 3px lime;
+}
+.container1:focus .krug {
+  box-shadow: 0px 0px 30px lime;
+  border: solid 3px lime;
+}
+.container1:focus .krugi {
+  box-shadow: 0px 0px 30px lime;
+  border: solid 3px lime;
+}
+.container1:focus .krugig {
+  box-shadow: 0px 0px 30px lime;
+  border: solid 3px lime;
+}
+.container1:focus .krugis {
+  box-shadow: 0px 0px 30px lime;
+  border: solid 3px lime;
+} */
+
+.da {
+  background-color: rgb(0, 0, 0);
+  inline-size: 50px;
+  block-size: 50px;
+  position: absolute;
+  margin: 175px;
+  border: solid 3px red;
+  box-shadow: 0px 0px 30px red;
+
+  animation-name: da;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transition-duration: 0.5s;
+}
+@keyframes da {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
